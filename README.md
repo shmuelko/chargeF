@@ -25,67 +25,113 @@ Deliverables:
 - open link: http://localhost:3000/api/v0/orders
 
 # REST API:
-Paths:
+```yaml
+paths:
+  /api/v0/orders:
+    get:
+      summary: Returns all Orders.
+      parameters:
+        - in: path
+          name: id
+          required: true
+          type: string
+          minimum: 1
+          description: The ID of the order to return.
+      responses:
+        200:
+          description: A list of Orders object.
+          schema:
+            type: list[Orders]
+        default:
+          description: Unexpected error
+    patch:
+      summary: Returns all Orders.
+      parameters:
+        - in: path
+          name: id
+          required: true
+          type: string
+          minimum: 1
+          description: The ID of the order to return.
+        - in: body
+          type: object
+          description: Create new Order.
+      responses:
+        200:
+          description: The updated object.
+          schema:
+            type: Order
+        default:
+          description: Unexpected error
+    put:
+      summary: Create new Order.
+      parameters:
+        - in: body
+          type: object
+          description: Create new Order.
+      responses:
+        200:
+          description: The new Order object.
+          schema:
+            type: object
+            properties:
+              userId:
+                type: Number
+                example: 4
+              items:
+                type: [Object]
+        default:
+          description: Unexpected error
 
-***api/v0/orders:***
+  /api/v0/orders/{id}:
+    get:
+      summary: Returns a order by ID.
+      parameters:
+        - in: path
+          name: id
+          required: true
+          type: integer
+          minimum: 1
+          description: The ID of the order to return.
+      responses:
+        200:
+          description: A Order object.
+          schema:
+            type: object
+            properties:
+              userId:
+                type: Number
+                example: 65a3beb7736d8d52d86cb351
+              items:
+                type: string
+                example: [{ productId: Number, quantity: Number, price: Number, subtotal: Number }]    
+            status:
+              type: string
+              example: 'pending'
+        400:
+          description: The specified user ID is invalid (e.g. not a number).
+        404:
+          description: A user with the specified ID was not found.
+        default:
+          description: Unexpected error
+  delete:
+    summary: Delete this order.
+    parameters:
+      - in: path
+        name: id
+        required: true
+        type: integer
+        minimum: 1
+        description: The ID of the order to remove.
+    responses:
+      200:
+        description: Confirmation that the Order was removed.
+        schema:
+          type: string
+      404:
+        description: A user with the specified ID was not found.
+      default:
+        description: Unexpected error
+```
 
-POST: Create a new order.
-
-**Responses:**
-
-201:
-**description:** Order created successfully.
-
-500:
-**description:** Internal server error.
-
-
-GET: Retrieve all orders.
-
-**parameters:**
-
-- Don't need any parameters
-
-***/api/v0/orders/:id*** 
-
-GET: Retrieve information about a specific order.
-
-**parameters:**
-
-- orderId: string
-
-**Responses:**
-
-200:
-**description:** Order details retrieved successfully.
-
-DELETE: delete specific order.
-
-**parameters:**
-
-- orderId: string
-
-**description:** deleted this order
-
-**Responses:**
-
-201:
-**description:** Order was removed.
-
-500:
-**description:** Internal server error.
-
-PUT: update specific order.
-
-**parameters:**
-
-- orderId: string
-- newBody: {}
-
-**Responses:**
-
-201:
-**description:** Order was updated.
-
-500:
-**description:** Internal server error.
+ 
