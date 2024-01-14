@@ -1,0 +1,407 @@
+<mxfile host="app.diagrams.net" modified="2024-01-14T07:59:13.228Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="9qE5nyLNGXCiVHK9sW74" version="22.1.18" type="github">
+  <diagram name="Page-1" id="3phAu5CM36Iw9liIeKcM">
+    <mxGraphModel dx="1434" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="Order Service" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" parent="1" vertex="1">
+          <mxGeometry x="20" y="434" width="150" height="576" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="Inventory Service" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" parent="1" vertex="1">
+          <mxGeometry x="220" y="434" width="150" height="576" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="Product Catalog Service" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" parent="1" vertex="1">
+          <mxGeometry x="420" y="434" width="188" height="576" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="Pricing Service" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" parent="1" vertex="1">
+          <mxGeometry x="658" y="434" width="150" height="576" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="Billing Service" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" parent="1" vertex="1">
+          <mxGeometry x="858" y="434" width="150" height="576" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="Shipping Service" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" parent="1" vertex="1">
+          <mxGeometry x="1058" y="434" width="150" height="576" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="Email Service" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" parent="1" vertex="1">
+          <mxGeometry x="1317" y="434" width="150" height="576" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="Fulfillment Service" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" parent="1" vertex="1">
+          <mxGeometry x="1517" y="434" width="150" height="576" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="Request Order" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;startArrow=none;startFill=0;" parent="1" source="2" target="3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="205" y="541" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11" value="Get Product Details/ Errors" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;startArrow=classicThin;startFill=1;" parent="1" source="3" target="4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="415" y="593" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="12" value="Get Product Price / Errors" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;startArrow=classicThin;startFill=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="524.59" y="640" />
+            </Array>
+            <mxPoint x="294.91352941176484" y="639.9999999999995" as="sourcePoint" />
+            <mxPoint x="733.09" y="639.9999999999995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13" value="Request Payment " style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;startArrow=none;startFill=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="524" y="678" />
+            </Array>
+            <mxPoint x="94.32352941176487" y="678" as="sourcePoint" />
+            <mxPoint x="932.5" y="678" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="14" value="Request Shipping" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=8 8;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="624" y="748" />
+            </Array>
+            <mxPoint x="94.32352941176487" y="748" as="sourcePoint" />
+            <mxPoint x="1132.5" y="748" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15" value="Send Shipping Notification" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=8 8;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1273" y="785" />
+            </Array>
+            <mxPoint x="1132.3235294117649" y="785" as="sourcePoint" />
+            <mxPoint x="1391.5" y="785" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16" value="Fulfill Order" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=8 8;" parent="1" source="7" target="9" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1373" y="853" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="17" value="Send Payment Notification" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=8 8;" parent="1" source="6" target="8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1173" y="905" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-35" value="Fulfillment Service" style="swimlane;whiteSpace=wrap;html=1;fontSize=16;swimlaneFillColor=#FFFFFF;" parent="1" vertex="1" collapsed="1">
+          <mxGeometry x="1502" y="260" width="180" height="30" as="geometry">
+            <mxRectangle x="1502" y="260" width="379.5" height="512.5" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-36" value="Responsebility" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-35" vertex="1">
+          <mxGeometry x="9" y="32" width="360" height="137" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-37" value="&lt;ul&gt;&lt;li&gt;Manages warehouse logistics and picking/packing processes.&lt;/li&gt;&lt;li&gt;Interacts with Inventory Service for stock updates.&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-36" vertex="1">
+          <mxGeometry y="30" width="360" height="107" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-106" value="DB" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-35" vertex="1">
+          <mxGeometry x="9" y="177.5" width="361" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-107" value="AWS DynamoDB" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-106" vertex="1">
+          <mxGeometry y="30" width="361" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-108" value="Event-Driven" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-35" vertex="1">
+          <mxGeometry x="9" y="268" width="361" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-109" value="SNS" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-108" vertex="1">
+          <mxGeometry y="30" width="361" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-110" value="&lt;div&gt;Edge Case Handling&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-35" vertex="1">
+          <mxGeometry x="9" y="347.5" width="361" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-111" value="&lt;div&gt;Service Connections&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-35" vertex="1">
+          <mxGeometry x="9" y="427.25" width="361" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-53" value="Confirmation/Error " style="verticalAlign=bottom;endArrow=none;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;startArrow=classicThin;startFill=1;endFill=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="524.5" y="701" />
+            </Array>
+            <mxPoint x="94.5" y="701" as="sourcePoint" />
+            <mxPoint x="933.5" y="701" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-52" value="Return Order / Error / No Item" style="verticalAlign=bottom;endArrow=none;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;startArrow=classicThin;startFill=1;endFill=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="201" y="560" />
+            </Array>
+            <mxPoint x="94.32352941176487" y="559.9999999999995" as="sourcePoint" />
+            <mxPoint x="294.49999999999955" y="559.9999999999995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-54" value="Error Handling" style="verticalAlign=bottom;endArrow=none;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endFill=0;startArrow=classicThin;startFill=1;dashed=1;dashPattern=8 8;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1271" y="804" />
+            </Array>
+            <mxPoint x="1130" y="804" as="sourcePoint" />
+            <mxPoint x="1390" y="804" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-28" value="&lt;div&gt;Shipping Service&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;fontSize=16;swimlaneFillColor=#FFFFFF;" parent="1" vertex="1" collapsed="1">
+          <mxGeometry x="1048" y="260" width="170" height="30" as="geometry">
+            <mxRectangle x="1048" y="260" width="372" height="750.25" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-29" value="Responsebility" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-28" vertex="1">
+          <mxGeometry x="16" y="32" width="336" height="137" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-30" value="&lt;ul&gt;&lt;li&gt;Connects with shipping providers like FedEx or DHL.&lt;/li&gt;&lt;li&gt;Generates shipping labels and tracks packages.&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-29" vertex="1">
+          <mxGeometry y="30" width="336" height="107" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-100" value="DB" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-28" vertex="1">
+          <mxGeometry x="19" y="180" width="330" height="70" as="geometry">
+            <mxRectangle x="19" y="180" width="60" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-101" value="AWS DynamoDB" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-100" vertex="1">
+          <mxGeometry y="30" width="330" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-102" value="Event-Driven" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-28" vertex="1">
+          <mxGeometry x="19" y="270.5" width="330" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-103" value="AWS SNS" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-102" vertex="1">
+          <mxGeometry y="30" width="330" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-104" value="&lt;div&gt;Edge Case Handling&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-28" vertex="1">
+          <mxGeometry x="19" y="350" width="330" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-124" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 16px;&quot;&gt;&amp;nbsp;If the Shipping Service encounters an issue,&amp;nbsp;it can:&lt;/span&gt;&lt;/div&gt;&lt;ul style=&quot;border-color: var(--border-color); font-size: 16px;&quot;&gt;&lt;li style=&quot;border-color: var(--border-color); margin-left: 15px; margin-bottom: 10px;&quot;&gt;Retry shipping using an alternative method.&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color); margin-left: 15px; margin-bottom: 10px;&quot;&gt;Notify the Order Service and customer for resolution.&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="Xv4CY4VF8reMuBuCOZ3v-104" vertex="1">
+          <mxGeometry y="30" width="330" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-105" value="&lt;div&gt;Service Connections&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-28" vertex="1">
+          <mxGeometry x="19" y="570.25" width="330" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-123" value="&lt;ul style=&quot;border-color: var(--border-color); font-size: 16px;&quot;&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Order Service - to receive shipping instructions.&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Shipping provider API - to generate labels and track packages.&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Order Service - to report shipping status updates.&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="Xv4CY4VF8reMuBuCOZ3v-105" vertex="1">
+          <mxGeometry y="30" width="330" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-31" value="&lt;div&gt;Email Service&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;fontSize=16;swimlaneFillColor=#FFFFFF;" parent="1" vertex="1" collapsed="1">
+          <mxGeometry x="1322" y="200" width="140" height="30" as="geometry">
+            <mxRectangle x="1322" y="200" width="383" height="560" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-32" value="Responsebility" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-31" vertex="1">
+          <mxGeometry x="9" y="32" width="351" height="137" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-33" value="&lt;ul&gt;&lt;li&gt;Sends order-related notifications to customers, including order confirmation, shipping updates, and invoices.&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-32" vertex="1">
+          <mxGeometry y="30" width="351" height="107" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-112" value="DB" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-31" vertex="1">
+          <mxGeometry x="9" y="177.25" width="351" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-113" value="AWS DynamoDB" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-112" vertex="1">
+          <mxGeometry y="30" width="351" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-114" value="Event-Driven" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-31" vertex="1">
+          <mxGeometry x="9" y="267.75" width="351" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-115" value="SNS" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-114" vertex="1">
+          <mxGeometry y="30" width="351" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-116" value="&lt;div&gt;Edge Case Handling&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-31" vertex="1">
+          <mxGeometry x="9" y="347.25" width="351" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-117" value="&lt;div&gt;Service Connections&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-31" vertex="1">
+          <mxGeometry x="9" y="430" width="351" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-125" value="&lt;ul style=&quot;border-color: var(--border-color); font-size: 16px; text-align: left;&quot;&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Order Service - to subscribe to order events.&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Email delivery service - to send notifications.&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="Xv4CY4VF8reMuBuCOZ3v-117" vertex="1">
+          <mxGeometry y="30" width="351" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-41" value="&lt;div&gt;Pricing Service&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;fontSize=16;swimlaneFillColor=#FFFFFF;" parent="1" vertex="1" collapsed="1">
+          <mxGeometry x="653" y="260" width="160" height="30" as="geometry">
+            <mxRectangle x="653" y="260" width="350" height="510" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-42" value="Responsebility" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-41" vertex="1">
+          <mxGeometry x="9" y="32" width="321" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-43" value="&lt;div&gt;&lt;ul&gt;&lt;li&gt;Calculates the total order amount based on cart items, promotions, and taxes.&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-42" vertex="1">
+          <mxGeometry y="30" width="321" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-93" value="DB" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-41" vertex="1">
+          <mxGeometry x="9" y="170.75" width="330" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-94" value="AWS DynamoDB" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-93" vertex="1">
+          <mxGeometry y="30" width="330" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-95" value="Event-Driven" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-41" vertex="1">
+          <mxGeometry x="9" y="261.25" width="330" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-96" value="AWS SNS" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-95" vertex="1">
+          <mxGeometry y="30" width="330" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-97" value="&lt;div&gt;Edge Case Handling&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-41" vertex="1">
+          <mxGeometry x="9" y="340.75" width="330" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-98" value="&lt;div&gt;Service Connections&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-41" vertex="1">
+          <mxGeometry x="9" y="420.5" width="330" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-38" value="&lt;div&gt;Billing Service&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;fontSize=16;swimlaneFillColor=#FFFFFF;" parent="1" vertex="1" collapsed="1">
+          <mxGeometry x="858" y="200" width="150" height="30" as="geometry">
+            <mxRectangle x="858" y="200" width="374.5" height="670" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-39" value="Responsebility" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-38" vertex="1">
+          <mxGeometry x="4.75" y="30" width="365" height="137" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-40" value="&lt;div&gt;&lt;ul&gt;&lt;li&gt;Integrates with third-party payment gateways like Stripe or PayPal.&lt;/li&gt;&lt;li&gt;Processes payments based on Order Service instructions.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-39" vertex="1">
+          <mxGeometry y="30" width="365" height="107" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-77" value="DB" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-38" vertex="1">
+          <mxGeometry x="4.75" y="171" width="361" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-78" value="AWS DynamoDB" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-77" vertex="1">
+          <mxGeometry y="30" width="361" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-79" value="Event-Driven" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-38" vertex="1">
+          <mxGeometry x="4.75" y="261.5" width="361" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-80" value="AWS SNS" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-79" vertex="1">
+          <mxGeometry y="30" width="361" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-81" value="&lt;div&gt;Edge Case Handling&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-38" vertex="1">
+          <mxGeometry x="4.75" y="341" width="355.25" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-121" value="&lt;span style=&quot;font-size: 16px; background-color: initial;&quot;&gt;If the Billing Service encounters a payment issue,&amp;nbsp;it can:&lt;br&gt;&lt;/span&gt;&lt;ul style=&quot;border-color: var(--border-color); font-size: 16px;&quot;&gt;&lt;li style=&quot;border-color: var(--border-color); margin-left: 15px; margin-bottom: 10px;&quot;&gt;Retry the transaction automatically.&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color); margin-left: 15px; margin-bottom: 10px;&quot;&gt;Notify the Order Service and customer for manual intervention.&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="Xv4CY4VF8reMuBuCOZ3v-81" vertex="1">
+          <mxGeometry y="30" width="355.25" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-82" value="&lt;div&gt;Service Connections&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-38" vertex="1">
+          <mxGeometry x="4.75" y="522.75" width="361" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-122" value="&lt;ul style=&quot;border-color: var(--border-color); font-size: 16px; text-align: left;&quot;&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Order Service - to receive payment instructions.&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Third-party payment gateway - to process payments.&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Order Service - to report success or failure.&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="Xv4CY4VF8reMuBuCOZ3v-82" vertex="1">
+          <mxGeometry y="30" width="361" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-44" value="&lt;div&gt;Product Catalog Service&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;fontSize=16;swimlaneFillColor=#FFFFFF;" parent="1" vertex="1" collapsed="1">
+          <mxGeometry x="399" y="200" width="230" height="30" as="geometry">
+            <mxRectangle x="399" y="200" width="383" height="510" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-45" value="Responsebility" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-44" vertex="1">
+          <mxGeometry x="9" y="32" width="360" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-46" value="&lt;div&gt;&lt;ul&gt;&lt;li&gt;Maintains product information, including prices, descriptions, and images.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-45" vertex="1">
+          <mxGeometry y="30" width="360" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-71" value="DB" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-44" vertex="1">
+          <mxGeometry x="9" y="168" width="361" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-72" value="AWS DynamoDB&lt;br&gt;AWS S3" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-71" vertex="1">
+          <mxGeometry y="30" width="361" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-73" value="Event-Driven" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-44" vertex="1">
+          <mxGeometry x="9" y="258.5" width="361" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-74" value="AWS SNS" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-73" vertex="1">
+          <mxGeometry y="30" width="361" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-75" value="&lt;div&gt;Edge Case Handling&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-44" vertex="1">
+          <mxGeometry x="10" y="338" width="360" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-76" value="&lt;div&gt;Service Connections&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-44" vertex="1">
+          <mxGeometry x="9" y="417.75" width="361" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-20" value="&lt;div&gt;Inventory Service&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;fontSize=16;swimlaneFillColor=#FFFFFF;" parent="1" vertex="1" collapsed="1">
+          <mxGeometry x="210" y="260" width="170" height="30" as="geometry">
+            <mxRectangle x="210" y="260" width="361" height="630" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-21" value="Responsebility" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-20" vertex="1">
+          <mxGeometry x="10" y="30" width="340" height="125" as="geometry">
+            <mxRectangle x="9" y="32" width="140" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-22" value="&lt;div&gt;&lt;ul&gt;&lt;li&gt;Tracks product availability and quantities.&lt;/li&gt;&lt;li&gt;Notifies Order Service of potential inventory discrepancies.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-21" vertex="1">
+          <mxGeometry y="30" width="340" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-83" value="DB" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-20" vertex="1">
+          <mxGeometry x="6.5" y="166.5" width="341" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-84" value="AWS DynamoDB" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-83" vertex="1">
+          <mxGeometry y="30" width="341" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-85" value="Event-Driven" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-20" vertex="1">
+          <mxGeometry x="9" y="257" width="340" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-86" value="AWS SNS" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-85" vertex="1">
+          <mxGeometry y="30" width="340" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-87" value="&lt;div&gt;Edge Case Handling&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-20" vertex="1">
+          <mxGeometry x="9" y="336.5" width="341" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-120" value="&lt;span style=&quot;font-size: 16px; text-align: left; background-color: initial;&quot;&gt;If an item is out of stock during order processing, the Order Service can:&lt;/span&gt;&lt;br&gt;&lt;ul style=&quot;border-color: var(--border-color); font-size: 16px; text-align: left;&quot;&gt;&lt;li style=&quot;border-color: var(--border-color); margin-left: 15px; margin-bottom: 10px;&quot;&gt;Notify the customer and offer alternative products.&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color); margin-left: 15px; margin-bottom: 10px;&quot;&gt;Place the order on backorder and fulfill it when stock becomes available&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="Xv4CY4VF8reMuBuCOZ3v-87" vertex="1">
+          <mxGeometry y="30" width="341" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-88" value="&lt;div&gt;Service Connections&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-20" vertex="1">
+          <mxGeometry x="10" y="549" width="341" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-17" value="&lt;div&gt;Order Service&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;fontSize=16;swimlaneFillColor=#FFFFFF;" parent="1" vertex="1" collapsed="1">
+          <mxGeometry x="20" y="200" width="150" height="30" as="geometry">
+            <mxRectangle x="20" y="200" width="360" height="700" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-63" value="Responsebility" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-17" vertex="1">
+          <mxGeometry y="22.25" width="330" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-64" value="&lt;ul&gt;&lt;li&gt;Handles the main order workflow, including creation, processing, and status updates.&lt;/li&gt;&lt;li&gt;Orchestrates interactions with other services.&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-63" vertex="1">
+          <mxGeometry y="30" width="330" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-65" value="DB" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-17" vertex="1">
+          <mxGeometry y="162.25" width="330" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-66" value="AWS DynamoDB" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-65" vertex="1">
+          <mxGeometry y="30" width="330" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-67" value="Event-Driven" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-17" vertex="1">
+          <mxGeometry y="252.75" width="330" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-68" value="AWS SNS" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-67" vertex="1">
+          <mxGeometry y="30" width="330" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-70" value="&lt;div&gt;Service Connections&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-17" vertex="1">
+          <mxGeometry y="400" width="330" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-119" value="&lt;ul style=&quot;font-size: 16px;&quot;&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Inventory Service - to check availability and reserve items.&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Product Catalog Service - to fetch product information and prices.&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Pricing Service - to calculate total order amount.&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Billing Service - to initiate payment.&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Shipping Service - to generate shipping labels and track packages.&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Email Service - to send order notifications.&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Fulfillment Service (optional) - to coordinate order picking and packing.&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="Xv4CY4VF8reMuBuCOZ3v-70" vertex="1">
+          <mxGeometry y="30" width="330" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-69" value="&lt;div&gt;Edge Case Handling&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;" parent="Xv4CY4VF8reMuBuCOZ3v-17" vertex="1">
+          <mxGeometry y="332.25" width="330" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Xv4CY4VF8reMuBuCOZ3v-118" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;br&gt;&lt;/blockquote&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="Xv4CY4VF8reMuBuCOZ3v-69" vertex="1">
+          <mxGeometry y="30" width="330" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Gm0-vH-LrbXyS4M_SI-A-17" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="790" width="170" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Gm0-vH-LrbXyS4M_SI-A-18" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="130" y="830" as="sourcePoint" />
+            <mxPoint x="242.25" y="830" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Gm0-vH-LrbXyS4M_SI-A-19" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="130" y="870" as="sourcePoint" />
+            <mxPoint x="250" y="870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Gm0-vH-LrbXyS4M_SI-A-20" value="Async" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="800" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Gm0-vH-LrbXyS4M_SI-A-21" value="Sync" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="840" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
