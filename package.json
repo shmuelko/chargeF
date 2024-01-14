@@ -1,0 +1,13 @@
+{
+  "name": "chargef",
+  "version": "1.0.0",
+  "description": "We would like you to design a classic e-commerce store using micro-services and a event-driven approach (ideally using AWS’ primitives) that meets the requirements below.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
