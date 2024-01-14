@@ -27,7 +27,7 @@ Deliverables:
 # REST API:
 Paths:
 
-/orders:
+***api/v0/orders:***
 
 POST: Create a new order.
 
@@ -39,6 +39,15 @@ POST: Create a new order.
 500:
 **description:** Internal server error.
 
+
+GET: Retrieve all orders.
+
+**parameters:**
+
+- Don't need any parameters
+
+***/api/v0/orders/:id*** 
+
 GET: Retrieve information about a specific order.
 
 **parameters:**
@@ -49,13 +58,6 @@ GET: Retrieve information about a specific order.
 
 200:
 **description:** Order details retrieved successfully.
-
-GET: Retrieve all orders.
-
-**parameters:**
-
-- Don't need any parameters
-
 
 DELETE: delete specific order.
 
@@ -69,6 +71,21 @@ DELETE: delete specific order.
 
 201:
 **description:** Order was removed.
+
+500:
+**description:** Internal server error.
+
+PUT: update specific order.
+
+**parameters:**
+
+- orderId: string
+- newBody: {}
+
+**Responses:**
+
+201:
+**description:** Order was updated.
 
 500:
 **description:** Internal server error.
