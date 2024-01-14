@@ -16,5 +16,4 @@ Deliverables:
 - Please write the main handler for the order creation flow in node.js. While we don’t expect the code to “work”, it should look like “runnable” code and demonstrate a best practice as you see fit.
 
 Diagram View:</br>
-[https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1&title=sequence%20diagram.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fshmuelko%2FChargeflow%2Fmain%2Fsequence%2520diagram.drawio
-](https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1&title=sequence%20diagram.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fshmuelko%2FChargeflow%2Fmain%2Fsequence%2520diagram.drawio)https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1&title=sequence%20diagram.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fshmuelko%2FChargeflow%2Fmain%2Fsequence%2520diagram.drawio
+[https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1&title=sequence%20diagram.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fshmuelko%2FChargeflow%2Fmain%2Fsequence%2520diagram.drawio]
